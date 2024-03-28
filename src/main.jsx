@@ -12,31 +12,31 @@ import Contact from "./Pages/Contact.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/portfolio/",
     element: <App />,
     children: [
       {
-        path: "portfolio/home",
+        path: "/portfolio/home",
         element: <Home />,
       },
       {
-        path: "portfolio/about",
+        path: "/portfolio/about",
         element: <About />,
       },
       {
-        path: "portfolio/skills",
+        path: "/portfolio/skills",
         element: <Skills />,
       },
       {
-        path: "portfolio/resume",
+        path: "/portfolio/resume",
         element: <Resume />,
       },
       {
-        path: "portfolio/projects",
+        path: "/portfolio/projects",
         element: <Projects />,
       },
       {
-        path: "portfolio/contact",
+        path: "/portfolio/contact",
         element: <Contact />,
       },
     ],

@@ -30,7 +30,7 @@ const Navbar = () => {
                 HOME
               </NavLink>
               <NavLink
-                to="portfolio/about"
+                to="/portfolio/about"
                 style={({ isActive }) => ({
                   borderColor: isActive ? "white" : "transparent",
                   borderWidth: 2,
@@ -44,7 +44,7 @@ const Navbar = () => {
                 ABOUT ME
               </NavLink>
               <NavLink
-                to="portfolio/projects"
+                to="/srcportfolio/projects"
                 style={({ isActive }) => ({
                   borderColor: isActive ? "white" : "transparent",
                   borderWidth: 2,
@@ -58,7 +58,7 @@ const Navbar = () => {
                 PROJECTS
               </NavLink>
               <NavLink
-                to="portfolio/resume"
+                to="/portfolio/resume"
                 style={({ isActive }) => ({
                   borderColor: isActive ? "white" : "transparent",
                   borderWidth: 2,
@@ -72,7 +72,7 @@ const Navbar = () => {
                 RESUME
               </NavLink>
               <NavLink
-                to="portfolio/skills"
+                to="/portfolio/skills"
                 style={({ isActive }) => ({
                   borderColor: isActive ? "white" : "transparent",
                   borderWidth: 2,
@@ -87,7 +87,7 @@ const Navbar = () => {
               </NavLink>
 
               <NavLink
-                to="portfolio/contact"
+                to="/portfolio/contact"
                 style={({ isActive }) => ({
                   borderColor: isActive ? "white" : "transparent",
                   borderWidth: 2,
