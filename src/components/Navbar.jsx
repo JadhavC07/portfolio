@@ -16,7 +16,7 @@ const Navbar = () => {
             <div className="flex items-baseline space-x-4">
               {/* Navbar links */}
               <NavLink
-                to="/portfolio/home"
+                to="/portfolio/"
                 style={({ isActive }) => ({
                   borderColor: isActive ? "white" : "transparent",
                   borderWidth: 2,
