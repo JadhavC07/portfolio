@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 
 const Contact = () => {
@@ -42,22 +43,29 @@ const Contact = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (validateForm()) {
-      // Form submission logic here
-      console.log(formData);
-      // Clear form fields after submission
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
+      try {
+        // Make HTTP POST request to your backend endpoint
+        const response = await axios.post(
+          "http://localhost:3000/send-email",
+          formData
+        );
+        console.log(response.data); // Log response from the server
+        // Clear form fields after successful submission
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      } catch (error) {
+        console.error("Error sending email:", error);
+      }
     }
   };
-
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center items-center">
       <div className="bg-white p-8 rounded-lg shadow-md w-full sm:max-w-lg">

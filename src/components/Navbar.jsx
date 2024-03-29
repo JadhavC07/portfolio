@@ -140,38 +140,38 @@ const Navbar = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link
-                to="portfolio/home"
+                to="/portfolio/home"
                 className="text-white hover:border-white border-transparent border-2 hover:border-current hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 HOME
               </Link>
               <Link
-                to="portfolio/about"
+                to="/portfolio/about"
                 className="text-white hover:border-white border-transparent border-2 hover:border-current hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 ABOUT ME
               </Link>
               <Link
-                to="portfolio/projects"
+                to="/portfolio/projects"
                 className="text-white hover:border-white border-transparent border-2 hover:border-current hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 PROJECTS
               </Link>
               <Link
-                to="portfolio/contact"
+                to="/portfolio/resume"
                 className="text-white hover:border-white border-transparent border-2 hover:border-current hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Resume
               </Link>
               <Link
-                href="portfolio/skills"
+                to="/portfolio/skills"
                 className="text-white hover:border-white border-transparent border-2 hover:border-current hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Skills
               </Link>
 
               <Link
-                to="portfolio/contact"
+                to="/portfolio/contact"
                 className="text-white hover:border-white border-transparent border-2 hover:border-current hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Contact
