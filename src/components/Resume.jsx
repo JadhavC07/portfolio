@@ -1,4 +1,4 @@
-import resumeImage from "../assets/Resume/Chandan Jadhav Full-Stack-Developer_SVG_Resume.svg";
+import ResumePDF from "../assets/Resume/Chandan Jadhav Full-Stack-Developer_Resume.pdf";
 
 const Resume = () => {
   return (
@@ -9,7 +9,13 @@ const Resume = () => {
         </h2>
         <div className="bg-white rounded-lg overflow-hidden shadow-lg mx-auto">
           {/* Use an img tag to display your resume image */}
-          <img src={resumeImage} alt="Resume" className="w-full h-auto" />
+          {/* <img src={resumeImage} alt="Resume" className="w-full h-auto" /> */}
+          <embed
+            src={ResumePDF}
+            type="application/pdf"
+            title="Chandan Jadhav Resume"
+            className="w-[52rem] h-[77rem]"
+          />
         </div>
       </div>
     </section>
