@@ -1,4 +1,4 @@
-import resumeImage from "../assets/Images/logo/resume.svg";
+import resumeImage from "../assets/Resume/Chandan Jadhav Full-Stack-Developer_SVG_Resume.svg";
 
 const Resume = () => {
   return (
