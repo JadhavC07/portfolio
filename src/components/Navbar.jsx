@@ -44,7 +44,7 @@ const Navbar = () => {
                 ABOUT ME
               </NavLink>
               <NavLink
-                to="/srcportfolio/projects"
+                to="/portfolio/projects"
                 style={({ isActive }) => ({
                   borderColor: isActive ? "white" : "transparent",
                   borderWidth: 2,
