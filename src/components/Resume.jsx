@@ -15,7 +15,7 @@ const Resume = () => {
               download="Chandan_Jadhav_Full_Stack_Developer_Resume.pdf"
               className="text-blue-500 hover:text-blue-700 font-semibold"
             >
-              Download My PDF
+              Download PDF
             </a>
           </div>
           {/* Display PNG resume */}
