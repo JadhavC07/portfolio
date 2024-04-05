@@ -19,7 +19,7 @@ const Skills = () => {
     Aos.init();
   }, []);
   return (
-    <div className="mt-8 text-center">
+    <div className="py-8 text-center  dark:bg-gray-950">
       <h1 className="text-3xl font-bold mb-8 text-lime-500" data-aos="fade-up">
         Skills
       </h1>
@@ -34,7 +34,7 @@ const Skills = () => {
         </h2>
         <div className="flex flex-wrap justify-center">
           <div
-            className="w-1/10 p-2 text-lime-700"
+            className="w-1/10 p-2  text-lime-700 dark:text-lime-500"
             data-aos="fade-right"
             data-aos-duration="2000"
           >
@@ -52,7 +52,7 @@ const Skills = () => {
             <div className="rounded-full w-24 h-24 flex items-center justify-center mx-auto">
               <img src={js} alt="Language 1 Logo" className="rounded-full" />
             </div>
-            <h3 className="text-lg font-semibold mt-2 text-lime-700">
+            <h3 className="text-lg font-semibold mt-2  text-lime-700 dark:text-lime-500">
               JavaScript
             </h3>
             <p className="text-sm text-gray-600">Description of Language 1</p>
@@ -69,7 +69,9 @@ const Skills = () => {
                 className="rounded-full"
               />
             </div>
-            <h3 className="text-lg font-semibold mt-2 text-lime-700">Python</h3>
+            <h3 className="text-lg font-semibold mt-2  text-lime-700 dark:text-lime-500">
+              Python
+            </h3>
             <p className="text-sm text-gray-600">Description of Language 1</p>
           </div>
           {/* Add more programming languages here */}
@@ -88,7 +90,7 @@ const Skills = () => {
             <div className="rounded-full w-24 h-24 flex items-center justify-center mx-auto">
               <img src={react} alt="Library 1 Logo" className="rounded-full" />
             </div>
-            <h3 className="text-lg font-semibold mt-2 text-lime-700">
+            <h3 className="text-lg font-semibold mt-2 dark:text-lime-500 text-lime-700">
               ReactJs
             </h3>
             <p className="text-sm text-gray-600">Description of Library 1</p>
@@ -101,7 +103,9 @@ const Skills = () => {
             <div className="rounded-full w-24 h-24 flex items-center justify-center mx-auto">
               <img src={jquery} alt="Library 1 Logo" className="rounded-full" />
             </div>
-            <h3 className="text-lg font-semibold mt-2 text-lime-700">JQuery</h3>
+            <h3 className="text-lg font-semibold mt-2 dark:text-lime-500 text-lime-700">
+              JQuery
+            </h3>
             <p className="text-sm text-gray-600">Description of Library 1</p>
           </div>
           {/* Add more libraries here */}
@@ -126,7 +130,7 @@ const Skills = () => {
                 className="rounded-full"
               />
             </div>
-            <h3 className="text-lg font-semibold mt-2 text-lime-700">
+            <h3 className="text-lg font-semibold mt-2 dark:text-lime-500 text-lime-700">
               ExpressJs
             </h3>
             <p className="text-sm text-gray-600">Description of Framework 1</p>
@@ -143,7 +147,7 @@ const Skills = () => {
                 className="rounded-full"
               />
             </div>
-            <h3 className="text-lg font-semibold mt-2 text-lime-700">
+            <h3 className="text-lg font-semibold mt-2 dark:text-lime-500 text-lime-700">
               Bootstrap
             </h3>
             <p className="text-sm text-gray-600">Description of Framework 1</p>
@@ -160,7 +164,7 @@ const Skills = () => {
                 className="rounded-full"
               />
             </div>
-            <h3 className="text-lg font-semibold mt-2 text-lime-700">
+            <h3 className="text-lg font-semibold mt-2 dark:text-lime-500 text-lime-700">
               Tailwind CSS
             </h3>
             <p className="text-sm text-gray-600">Description of Framework 1</p>
@@ -177,7 +181,9 @@ const Skills = () => {
                 className="rounded-full"
               />
             </div>
-            <h3 className="text-lg font-semibold mt-2 text-lime-700">Bulma</h3>
+            <h3 className="text-lg font-semibold mt-2 dark:text-lime-500 text-lime-700">
+              Bulma
+            </h3>
             <p className="text-sm text-gray-600">Description of Framework 1</p>
           </div>
           {/* Add more frameworks here */}
@@ -195,7 +201,9 @@ const Skills = () => {
                 className="rounded-full"
               />
             </div>
-            <h3 className="text-lg font-semibold mt-2 text-lime-700">MySQL</h3>
+            <h3 className="text-lg font-semibold mt-2 dark:text-lime-500 text-lime-700">
+              MySQL
+            </h3>
             <p className="text-sm text-gray-600">Description of Framework 1</p>
           </div>
           {/* Add more frameworks here */}
@@ -210,7 +218,7 @@ const Skills = () => {
             <div className="rounded-full w-24 h-24 flex items-center justify-center mx-auto">
               <img src={vscode} alt="Tool 1 Logo" className="rounded-full" />
             </div>
-            <h3 className="text-lg font-semibold mt-2 text-lime-700">
+            <h3 className="text-lg font-semibold mt-2 dark:text-lime-500 text-lime-700">
               VS Code
             </h3>
             <p className="text-sm text-gray-600">Description of Tool 1</p>
@@ -219,7 +227,9 @@ const Skills = () => {
             <div className="rounded-full w-24 h-24 flex items-center justify-center mx-auto">
               <img src={github} alt="Tool 1 Logo" className="rounded-full" />
             </div>
-            <h3 className="text-lg font-semibold mt-2 text-lime-700">GitHub</h3>
+            <h3 className="text-lg font-semibold mt-2 dark:text-lime-500 text-lime-700">
+              GitHub
+            </h3>
             <p className="text-sm text-gray-600">Description of Tool 1</p>
           </div>
           {/* Add more tools here */}

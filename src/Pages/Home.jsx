@@ -56,7 +56,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="flex justify-center py-12 bg-white">
+      <div className="flex justify-center py-12 bg-white dark:bg-gray-950">
         <div className="text-center p-20">
           <h1 className="text-4xl font-extrabold leading-5 mb-4 roboto-regula text-lime-500 ml11">
             {/* <span className="text-wrapper">
@@ -104,7 +104,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="">
+      <div className="dark:bg-gray-950">
         <div className="container mx-auto text-center">
           <div className="inline-block relative" style={{ maxWidth: "860px" }}>
             <img src={svgImage} alt="SVG Image" />

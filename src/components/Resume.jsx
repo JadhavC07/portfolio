@@ -3,9 +3,9 @@ import ResumePDF from "../assets/Resume/Chandan Jadhav Full-Stack-Developer_Resu
 
 const Resume = () => {
   return (
-    <section className="bg-gray-100 py-12">
+    <section className="bg-gray-100 dark:bg-gray-950 py-12">
       <div className="max-w-4xl mx-auto px-8">
-        <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center">
+        <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-8 text-center">
           Resume
         </h2>
         <div className="bg-white rounded-lg overflow-hidden shadow-lg mx-auto">
