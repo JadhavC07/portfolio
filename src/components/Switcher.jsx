@@ -1,12 +1,10 @@
-// Filename - Components/Switcher.js
-// Switcher.js
 import { useState } from "react";
 import useDarkSide from "../hooks/useDarkSide";
-import "./Switcher.css";
+import "../CSS/Switcher.css";
 
 export default function Switcher() {
   const [colorTheme, setTheme] = useDarkSide();
-  const [isDarkMode, setIsDarkMode] = useState(colorTheme === "dark");
+  const [isDarkMode, setIsDarkMode] = useState(colorTheme === "light");
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);

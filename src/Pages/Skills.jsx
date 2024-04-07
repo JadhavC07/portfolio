@@ -1,6 +1,4 @@
-import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 import javalogo from "../assets/Images/logo/Java2.svg";
 import js from "../assets/Images/logo/Javascript.svg";
 import python from "../assets/Images/logo/python2.svg";
@@ -15,9 +13,6 @@ import vscode from "../assets/Images/logo/vscode.svg";
 import github from "../assets/Images/logo/github.svg";
 
 const Skills = () => {
-  useEffect(() => {
-    Aos.init();
-  }, []);
   return (
     <div className="py-8 text-center  dark:bg-gray-950">
       <h1 className="text-3xl font-bold mb-8 text-lime-500" data-aos="fade-up">

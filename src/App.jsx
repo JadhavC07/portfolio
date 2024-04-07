@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import { useEffect, useState } from "react";
+import Aos from "aos";
 
 const Loader = () => {
   return (
@@ -19,6 +20,10 @@ function App() {
     }, 2500);
 
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    Aos.init();
   }, []);
   return (
     <div>

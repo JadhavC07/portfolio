@@ -1,5 +1,5 @@
-import axios from "axios";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +10,7 @@ const Contact = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [notification, setNotification] = useState({ message: "", type: "" });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -48,28 +49,54 @@ const Contact = () => {
 
     if (validateForm()) {
       try {
-        // Make HTTP POST request to your backend endpoint
-        const response = await axios.post(
-          "http://localhost:3000/send-email",
-          formData
+        await emailjs.send(
+          "service_7d96cjr",
+          "template_6jsy3vn",
+          formData,
+          "3g7fmoqhPZJraRgJ4"
         );
-        console.log(response.data); // Log response from the server
-        // Clear form fields after successful submission
         setFormData({
           name: "",
           email: "",
           subject: "",
           message: "",
         });
+        // Handle successful form submission
+        console.log("Form submitted successfully");
+        setNotification({
+          message: "Form submitted successfully",
+          type: "success",
+        });
       } catch (error) {
-        console.error("Error sending email:", error);
+        setNotification({ message: "Error submitting form", type: "error" });
+
+        // Handle error
+        console.error("Error submitting form:", error);
       }
     }
   };
+
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-950 flex justify-center items-center">
       <div className="bg-white dark:bg-gray-950 p-8 rounded-lg border dark:border-lime-500  shadow-md w-full sm:max-w-lg">
-        <h2 className="text-2xl font-semibold mb-4">Contact Me</h2>
+        <div className="flex flex-col">
+          <div>
+            <h2 className="text-2xl dark:text-white font-semibold mb-4">
+              Contact Me
+            </h2>
+          </div>
+          <div>
+            {notification.message && (
+              <div
+                className={`text-${
+                  notification.type === "success" ? "green" : "red"
+                }-500 text-sm mb-4 , dark:text-white`}
+              >
+                {notification.message}
+              </div>
+            )}
+          </div>
+        </div>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label
