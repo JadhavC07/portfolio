@@ -41,10 +41,10 @@ const Project = () => {
           Internship Projects
         </h1>
       </div>
-      <section className="card-section flex justify-between mx-10">
+      <section className="card-section flex lg:flex-row md:flex-row sm:flex-col min-[350px]:flex-col min-[350px]:mx-10 justify-between items-center mx-10">
         {projectName.map((project, index) => (
           <div
-            className="card dark:border-2 dark:border-lime-500 dark:hover:border-lime-500 border-2 border-gray-200 hover:border-gray-400"
+            className="card dark:border-2 mx-3 my-3 dark:border-lime-500 dark:hover:border-lime-500 border-2 border-gray-200 hover:border-gray-400"
             key={index}
           >
             <div className="card__image ">

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,7 +12,6 @@ const Contact = () => {
   });
 
   const [errors, setErrors] = useState({});
-  const [notification, setNotification] = useState({ message: "", type: "" });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -63,12 +64,13 @@ const Contact = () => {
         });
         // Handle successful form submission
         console.log("Form submitted successfully");
-        setNotification({
-          message: "Form submitted successfully",
-          type: "success",
+        toast.success("Form submitted successfully", {
+          position: "top-center",
         });
       } catch (error) {
-        setNotification({ message: "Error submitting form", type: "error" });
+        toast.error("Error submitting form", {
+          position: "top-center",
+        });
 
         // Handle error
         console.error("Error submitting form:", error);
@@ -86,15 +88,7 @@ const Contact = () => {
             </h2>
           </div>
           <div>
-            {notification.message && (
-              <div
-                className={`text-${
-                  notification.type === "success" ? "green" : "red"
-                }-500 text-sm mb-4 , dark:text-white`}
-              >
-                {notification.message}
-              </div>
-            )}
+            <ToastContainer />
           </div>
         </div>
         <form onSubmit={handleSubmit}>
