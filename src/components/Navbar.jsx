@@ -199,7 +199,7 @@ const Navbar = () => {
                 to="/portfolio/blogs"
                 className="text-white hover:border-white border-transparent border-2 hover:border-current hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
-                Contact
+                BLOGS
               </Link>
               <div className="">
                 <Switcher />
