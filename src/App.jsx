@@ -9,6 +9,8 @@ import Projects from "./Pages/Projects";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Resume from "./components/Resume";
+import Blog from "./Pages/blogs/Blog";
+import BlogOne from "./Pages/blogs/BlogOne";
 
 const Loader = () => {
   return (
@@ -45,6 +47,7 @@ function App() {
             <Route path="/portfolio/about" element={<About />} />
             <Route path="portfolio/contact" element={<Contact />} />
             <Route path="portfolio/resume" element={<Resume />} />
+            <Route path="portfolio/blogs" element={<BlogOne />} />
           </Routes>
         </>
       )}

@@ -101,7 +101,21 @@ const Navbar = () => {
               >
                 CONTACT
               </NavLink>
-              <div className="">
+              <NavLink
+                to="/portfolio/blogs"
+                style={({ isActive }) => ({
+                  borderColor: isActive ? "white" : "transparent",
+                  borderWidth: 2,
+                  borderStyle: "solid",
+                  "&:hover": {
+                    borderColor: "currentColor",
+                  },
+                })}
+                className="text-white hover:border-white border-transparent border-2 hover:border-current hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >
+                BLOGS
+              </NavLink>
+              <div className="w-[30px] h-[30px] ">
                 <Switcher />
               </div>
             </div>
