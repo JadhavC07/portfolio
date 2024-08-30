@@ -1,5 +1,5 @@
 import ResumeImage from "../assets/Resume/Chandan Jadhav Full-Stack-Developer_SVG_Resume.svg";
-import ResumePDF from "../assets/Resume/Chandan Jadhav Full-Stack-Developer_Resume.pdf";
+import ResumePDF from "../assets/Resume/Chandan Jadhav Resume.pdf";
 
 const Resume = () => {
   return (
